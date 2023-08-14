@@ -1,0 +1,185 @@
+body{
+    height: 100vh;
+}
+
+#sidebar{
+    background-color: #22445D;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#main{
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+#main-view{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    height: 100%;
+}
+
+#profile{
+    width: 90%;
+    background-color: #39627e;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+#profile-img img{
+    object-fit: contain;
+    width: 80px;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+#profile-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.profile-email{
+    color: rgb(186, 185, 185);
+}
+
+#menu{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 10px;
+    gap: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu-item{
+    height: 25px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #22445D;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item i{
+    padding-right: 10px;
+}
+
+.menu-item:hover{
+    background-color: #39627e;
+    transition: background-color 0.2s;
+
+}
+
+.active-menu-item:hover{
+    background-color:#ffa73b;
+    transition: background-color 0.2s;
+}
+
+.active-menu-item{
+    background-color:#F49D33;
+}
+
+#dashboard-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;   
+    margin: 20px;
+}
+
+.dash-item-big{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b8b5b5;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.dash-item-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.dash-item-number{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.tickets-table{
+display: grid;
+padding: 10px;
+background-color: #dfdfdf;
+}
+
+.ticket-header{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.ticket-header-item{
+    width: 10%;
+}
+
+.ticket{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+.ticket-item{
+    width: 10%;
+}
+
+.text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+
+    @supports (-webkit-line-clamp: 2) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: initial;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+.ticket-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.ticket-edit{
+    background-color: rgb(93, 154, 240);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.ticket-delete{
+    background-color: rgb(239, 69, 69);
+    padding: 5px;
+    border-radius: 6px;
+}

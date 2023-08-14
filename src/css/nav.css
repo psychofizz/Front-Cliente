@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.nav{
+    background-color: #E0D7BE;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+.sub-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    padding: 20px;
+}

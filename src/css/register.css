@@ -1,0 +1,38 @@
+#register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form-register{
+    background-color:#F3EAD3;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    max-width: 500px;
+    padding: 5px;
+}
+
+#form-register > label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+#form-register > input{
+    border: 0;
+    margin: 5px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#form-register > #btn-register{
+    background-color: #3F2305;
+    color: white;
+    height: 30px;
+}
+
+#sidebar-register{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

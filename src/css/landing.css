@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-color: #F29207;
+}
+
+#landing-pieces{
+    background-color: #F29207;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#login-box{
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+.nav img{
+    width: 80px;
+}
+
+.landing-buttons{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    background-color: white;
+}
+
+#info-box{
+    display: grid;
+}
+
+#landing-nav{
+    background-color: #FFEFD9;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+
+}
+#landing-nav img{
+    object-fit: cover;
+}
+
+.blurred{
+    position: relative;
+    overflow: visible;
+}
+
+.blurred::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-image: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+#landing-nav span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+        font-size: 2rem;
+}
+
+#nav-login-buttons{
+    display: flex;
+}
+
+#nav-login-buttons span{
+    margin-right: 10px;
+    margin: 5px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.title{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+
+.sub-title{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+}
